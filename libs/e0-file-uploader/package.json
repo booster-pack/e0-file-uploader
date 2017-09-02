@@ -1,0 +1,71 @@
+{
+  "name": "@booster-pack/e0-file-uploader",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "./node_modules/.bin/gulp build",
+    "build:watch": "gulp",
+    "docs": "npm run docs:build",
+    "docs:build": "compodoc -p tsconfig.json -n e0-file-uploader -d docs --hideGenerator",
+    "docs:serve": "npm run docs:build -- -s",
+    "docs:watch": "npm run docs:build -- -s -w",
+    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --runInBand"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupTestFrameworkScriptFile": "<rootDir>/src/jest.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github/com/booster-pack/client/file-loader"
+  },
+  "author": {
+    "name": "Matthew Harwood",
+    "email": "matthhar12@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github/com/booster-pack/client/file-loader/issues"
+  },
+  "devDependencies": {
+    "@angular/common": "^4.3.6",
+    "@angular/compiler": "^4.3.6",
+    "@angular/compiler-cli": "^4.3.6",
+    "@angular/core": "^4.3.6",
+    "@angular/platform-browser": "^4.3.6",
+    "@angular/platform-browser-dynamic": "^4.3.6",
+    "@compodoc/compodoc": "^1.0.0-beta.14",
+    "@types/node": "^8.0.26",
+    "@types/jest": "^20.0.8",
+    "codelyzer": "^3.1.2",
+    "core-js": "^2.5.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rollup": "^2.14.0",
+    "jest": "^20.0.4",
+    "jest-preset-angular": "^2.0.5",
+    "node-sass": "^4.5.3",
+    "node-sass-tilde-importer": "^1.0.0",
+    "node-watch": "^0.5.5",
+    "protractor": "^5.1.2",
+    "rollup": "^0.49.2",
+    "run-sequence": "^2.1.0",
+    "rxjs": "^5.4.3",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2",
+    "zone.js": "^0.8.17"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "@ngrx/store": "^4.0.3"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@booster-pack/e0-file-uploader",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github/com/booster-pack/client/file-loader"
+  },
+  "author": {
+    "name": "Matthew Harwood",
+    "email": "matthhar12@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github/com/booster-pack/client/file-loader/issues"
+  },
+  "main": "e0-file-uploader.umd.js",
+  "module": "e0-file-uploader.js",
+  "jsnext:main": "e0-file-uploader.js",
+  "typings": "e0-file-uploader.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.3.6",
+    "@ngrx/store": "^4.0.3",
+    "rxjs": "^5.4.3",
+    "zone.js": "^0.8.17"
+  }
+}
